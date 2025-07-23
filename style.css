@@ -13,12 +13,19 @@
     align-items: center;
     
 }
+.nav-item{
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
 
 .nav-list{
     display: flex;
     gap: 48px;
     list-style: none;
     font-family: "Inter", sans-serif;
+    
 }
 .cart{
     color: rgb(0, 0, 0);
@@ -31,16 +38,13 @@
 
 @media screen and (max-width:576px) {
     .nav-bar{
-        flex-direction: row;
+        max-width: 90%;  
         margin: 0 auto;
-        
+        flex-direction: row; 
+        gap: 16px;  
     }
     .nav-list{
-        visibility: hidden;
+        display: none;
     }
-    .cart{
-        display: flex;
-        visibility: visible;
-        align-items: center;
-    }
+    
 }
