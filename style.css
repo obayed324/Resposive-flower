@@ -65,6 +65,64 @@
     width: 100%;
 }
 
+/* our-plants Section */
+.our-plants{
+    
+    max-width: 1140px;
+    margin: 80px auto 0;
+}
+.our-plants-info{
+    text-align: center;
+    align-items: center;
+   margin-bottom: 49px;
+}
+.our-plants-info h1{
+    font-size: 3rem;
+}
+.our-plants-info p{
+    font-size: 1.4rem;
+    max-width: 85%;
+    margin-left: 100px;
+    
+}
+/* carts section */
+.carts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.cart{
+   max-width: 270px;
+   align-items: center;
+   text-align: center;
+  
+
+}
+.cart img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.cart p{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+}
+.cart h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.cart button {
+    background: rgb(233, 90, 8);
+    padding: 26px 50px 26px 50px;
+    color: white;
+    border: none;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    
+   
+}
 @media screen and (max-width:576px) {
     .nav-bar{
         max-width: 90%;  
@@ -76,8 +134,7 @@
         display: none;
     }
     .banner{
-        grid-template-columns: repeat(1,1fr);
-       
+        grid-template-columns: repeat(1,1fr); 
     }
     .banner-profile{
         order: 1;
@@ -93,6 +150,20 @@
     .banner-info p{
         max-width: 60%;
         font-size: 14px;
+    }
+    .our-plants{
+        margin-top: 20px;
+    }
+    .carts{
+        grid-template-columns: repeat(2,1fr);
+        margin: 10px;
+        gap: 10px;
+    }
+    .our-plants-info p{
+        
+        max-width: 100%;
+        margin: 20px;
+        
     }
     
 }
