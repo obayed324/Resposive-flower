@@ -118,11 +118,71 @@
     color: white;
     border: none;
     width: 100%;
-    margin-bottom: 30px;
-    
-    
-   
+    margin-bottom: 30px;   
 }
+
+/* Plants-Lover-Section  */
+
+.Plants-Lover-Section {
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px auto 20px;
+    align-items: center;
+    gap: 60px;
+}
+
+.store {
+    position: relative;
+}
+
+.logo {
+    background-image: url(./assets/trusted-badge.png);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -90px; 
+    left: 95%;
+    transform: translateX(-50%);
+    z-index: 10;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
+
+}
+
+.store-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.Plants-Lover-Section-text h1 {
+    font-family: Noto Serif;
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 85%;
+    color: rgb(0, 0, 0);
+}
+
+.Plants-Lover-Section-text ul {
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    
+}
+
+.Plants-Lover-Section-text li {
+    margin-bottom: 15px;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 75%;
+    margin-left: 10px;
+}
+
 @media screen and (max-width:576px) {
     .nav-bar{
         max-width: 90%;  
@@ -146,10 +206,12 @@
     .banner-info h1{
         
         font-size: 24px;
+        margin: 0 10px;
     }
     .banner-info p{
-        max-width: 60%;
+        max-width: 80%;
         font-size: 14px;
+        margin: 0 10px;
     }
     .our-plants{
         margin-top: 20px;
@@ -160,10 +222,26 @@
         gap: 10px;
     }
     .our-plants-info p{
-        
         max-width: 100%;
         margin: 20px;
-        
     }
+    /* .Plants-Lover-Section  */
+
+    .Plants-Lover-Section{
+        margin: 0 auto;
+        grid-template-columns: repeat(1,1fr);
+        margin: 10px 10px 18px 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .Plants-Lover-Section-text h1{
+         
+        max-width: 100%;
+        font-size: 24px;
+    }
+    .Plants-Lover-Section-text li{
+        max-width: 100%;
+    } 
     
 }
