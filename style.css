@@ -235,7 +235,7 @@
 .deal-bloom {
     width: 366.22px;
     height: 206px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/deal-bloom.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/deal-bloom.png");
     font-family: Noto Serif;
     font-size: 18px;
     font-weight: 600;
@@ -248,7 +248,7 @@
     color: white;
     width: 366.22px;
     height: 206px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/deal-ana.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/deal-ana.png");
     font-family: Noto Serif;
     font-size: 18px;
     font-weight: 600;
@@ -257,7 +257,7 @@
     border-radius: 10px;
 }
 .latest-deal-image-right {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/deal-zabo.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/deal-zabo.png");
     color: white;
     width: 753px;
     height: 423.13px;
@@ -269,7 +269,63 @@
     font-weight: 800;
 
 }
-  
+
+
+
+
+/* Subscribe Section*/
+
+.bg-imgae{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    height: 530px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.sub-info{
+    font-family: Noto Serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.sub-btn {
+    display: flex;
+}
+
+.sub-btn input[type="email"] {
+    padding-left: 15px;
+    width: 644px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+.sub-btn button {
+    width: 186px;
+    height: 50px;
+    background: rgb(233, 90, 8);
+    color: white;
+    border: 1px solid #ff5722;
+    border-radius: 0 6px 6px 0;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
 
 @media screen and (max-width:576px) {
     .nav-bar{
@@ -363,5 +419,31 @@
     .latest-deal-image-right a{
         font-size: 16px;
        
+    }
+    /* Subscribe button*/
+    .bg-imgae {
+        width: 393px;
+        height: 275px;
+        background-size: cover;
+        width: 100%;
+    }
+    .sub-info{
+        font-family: Noto Serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    
+    .sub-btn input[type="email"] {
+        padding-left: 10px;
+        width: 218px;
+        height: 50px;
+        
+    }
+    
+    .sub-btn button {
+        width: 103px;
+        height: 50px;
+        
+        
     }
 }
